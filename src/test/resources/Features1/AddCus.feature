@@ -1,7 +1,9 @@
 #Author: your.email@your.domain.com
+@Rakesh
 Feature: Add Customer
   User creating new account
 
+@Rakesh @venu
   Scenario: Hardcoded2
     Given User launch telecom application
     And User navigates into add customer page
@@ -39,7 +41,8 @@ Feature: Add Customer
       | gopi   | madan    | gopi@gmail.com  | Thiruvallur | 6543210987 |
     And User click on submit button
     Then User should be displayed customer id is generated
-    
+   
+   @Rakesh
       Scenario: two dimensional map
     Given User launch telecom application
     And User navigates into add customer page

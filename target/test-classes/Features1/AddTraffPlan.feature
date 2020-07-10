@@ -1,16 +1,16 @@
 #Author: your.email@your.domain.com
 Feature: Add Tariff Plan
   User creating new tariff plan
-
+@Rakesh
   Scenario: Hardcoded Info
-    Given User launches telecom application
+    Given User launch telecom application
     And User navigates into tariff plan page
     When User fills all the fields
     And User click on Tariff submit button
     Then User is displayed with the message tariff plan created
 
   Scenario: one dim list
-     Given User launches telecom application
+     Given User launch telecom application
     And User navigates into tariff plan page
     When User fills all the fields by using 1dim list
       | 1000 | 5000 | 200 | 100 | 2 | 50 | 1 |
@@ -18,7 +18,7 @@ Feature: Add Tariff Plan
     Then User is displayed with the message tariff plan created
 
   Scenario: one dim map
-     Given User launches telecom application
+     Given User launch telecom application
     And User navigates into tariff plan page
     When User fills all the fields by using 1dim map
       | rental          | 1000 |
@@ -32,7 +32,7 @@ Feature: Add Tariff Plan
     Then User is displayed with the message tariff plan created
 
   Scenario: two dim list
-   Given User launches telecom application
+   Given User launch telecom application
     And User navigates into tariff plan page
     When User fills all the fields by using 2dim list
       | 1000 | 5000 | 200 | 100 | 2 | 50 | 1 |
@@ -43,7 +43,7 @@ Feature: Add Tariff Plan
     Then User is displayed with the message tariff plan created
 
   Scenario: two dim map
-     Given User launches telecom application
+     Given User launch telecom application
     And User navigates into tariff plan page
     When User fills all the fields by using 2dim map
       | rental | local_minutes | inter_minutes | sms_pack | minutes_charges | inter_charges | sms_charges |
@@ -54,8 +54,9 @@ Feature: Add Tariff Plan
     And User click on Tariff submit button
     Then User is displayed with the message tariff plan created
 
-  Scenario Outline: using outline
-   Given User launches telecom application
+@Rakesh
+ Scenario Outline: using outline
+   Given User launch telecom application
     And User navigates into tariff plan page
     When User fills all the fields "<rental>","<local_minutes>","<inter_minutes>","<sms_pack>","<minutes_charges>","<inter_charges>","<sms_charges>",
     And User click on Tariff submit button
