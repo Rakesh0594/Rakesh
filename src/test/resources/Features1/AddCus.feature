@@ -1,27 +1,26 @@
 #Author: your.email@your.domain.com
-@Rakesh
+@Rakeshkumar
 Feature: Add Customer
   User creating new account
+  
+Background:
+ And User navigates into add customer page
 
 @Rakesh @venu
   Scenario: Hardcoded2
-    Given User launch telecom application
-    And User navigates into add customer page
     When User enters all the fields
     And User click on submit button
     Then User should be displayed customer id is generated
 
    Scenario: one dimensional list
-    Given User launch telecom application
-    And User navigates into add customer page
+
     When User enters all the fields by using 1dim list
       | Rakesh | venu | dk@gmail.com | Thiruvallur | 9684622544 |
     And User click on submit button
     Then User should be displayed customer id is generated
 
      Scenario: one dimensional map
-    Given User launch telecom application
-    And User navigates into add customer page
+  
     When User enters all the fields by using 1dim map
       | fname | Rakesh           |
       | lname | venu             |
@@ -32,8 +31,7 @@ Feature: Add Customer
     Then User should be displayed customer id is generated
     
      Scenario: two dimensional list
-    Given User launch telecom application
-    And User navigates into add customer page
+ 
     When User enters all the fields by using 2dim list
       | Rakesh | venu     | dk@gmail.com    | Thiruvallur | 9876543210 |
       | akash  | sundar   | akash@gmail.com | Thiruvallur | 8765432109 |
@@ -44,8 +42,7 @@ Feature: Add Customer
    
    @Rakesh
       Scenario: two dimensional map
-    Given User launch telecom application
-    And User navigates into add customer page
+  
     When User enters all the fields by using 2dim map
       | fname  | lname    | mail            | add         | phno       |
       | Rakesh | venu     | dk@gmail.com    | Thiruvallur | 9876543210 |
@@ -56,8 +53,7 @@ Feature: Add Customer
     Then User should be displayed customer id is generated
     
     Scenario Outline: by using outline
-    Given User launch telecom application
-    And User navigates into add customer page
+
     When User enters all the fields "<Fname>","<Lname>","<Mail>","<Add>","<Phno>"
     And User click on submit button
     Then User should be displayed customer id is generated

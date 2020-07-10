@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
                  dryRun=false,
                  plugin="html:target\\samplecucum-html-reports",
                  monochrome=true,
-                 tags={"@Rakesh,@venu"})
+                 tags={"@Rakeshkumar"})
 public class TestRunner {
                 
 	         
