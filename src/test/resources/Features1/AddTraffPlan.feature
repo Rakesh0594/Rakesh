@@ -1,7 +1,7 @@
 #Author: your.email@your.domain.com
 Feature: Add Tariff Plan
   User creating new tariff plan
-@Rakesh
+@Rakesh @venu
   Scenario: Hardcoded Info
     Given User launch telecom application
     And User navigates into tariff plan page
@@ -16,7 +16,8 @@ Feature: Add Tariff Plan
       | 1000 | 5000 | 200 | 100 | 2 | 50 | 1 |
     And User click on Tariff submit button
     Then User is displayed with the message tariff plan created
-
+    
+@Rakesh @venu
   Scenario: one dim map
      Given User launch telecom application
     And User navigates into tariff plan page

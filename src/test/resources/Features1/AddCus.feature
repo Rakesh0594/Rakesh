@@ -12,16 +12,15 @@ Background:
     And User click on submit button
     Then User should be displayed customer id is generated
 
+@Rakesh @venu
    Scenario: one dimensional list
-
-    When User enters all the fields by using 1dim list
+   When User enters all the fields by using 1dim list
       | Rakesh | venu | dk@gmail.com | Thiruvallur | 9684622544 |
     And User click on submit button
     Then User should be displayed customer id is generated
 
      Scenario: one dimensional map
-  
-    When User enters all the fields by using 1dim map
+  When User enters all the fields by using 1dim map
       | fname | Rakesh           |
       | lname | venu             |
       | mail  | dk@gmail.com     |
@@ -31,8 +30,7 @@ Background:
     Then User should be displayed customer id is generated
     
      Scenario: two dimensional list
- 
-    When User enters all the fields by using 2dim list
+  When User enters all the fields by using 2dim list
       | Rakesh | venu     | dk@gmail.com    | Thiruvallur | 9876543210 |
       | akash  | sundar   | akash@gmail.com | Thiruvallur | 8765432109 |
       | ravi   | chandran | ravi@gmail.com  | Thiruvallur | 7654321098 |

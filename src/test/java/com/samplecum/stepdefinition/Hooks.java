@@ -1,20 +1,16 @@
 package com.samplecum.stepdefinition;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.telecom.resources.commonactions;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-public class Hooks {
+public class Hooks extends commonactions{
 	
- static WebDriver driver;
+	commonactions ka = new commonactions();
+	
    @Before
 	public void beforescenerio() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\workspace\\samplecucum\\driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("http://www.demo.guru99.com/telecom/");
 		
+	    ka.launch("http://www.demo.guru99.com/telecom/");
 		System.out.println("executed before every scenerio");
 	}
 
