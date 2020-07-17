@@ -40,13 +40,13 @@ public class AddTrafficPlanStep extends commonactions{
 		//handleFrame();
 		
 		ka.button(dcp.getTariffBtn());
-        ka.insertText(dcp.getRental(),"2000");
-        ka.insertText(dcp.getLocal_minutes(),"20");
-        ka.insertText(dcp.getInterminutes(), "30");
-        ka.insertText(dcp.getSmspack(), "1000");
-        ka.insertText(dcp.getMinutescharges(), "2");
-        ka.insertText(dcp.getIntercharges(), "3");
-        ka.insertText(dcp.getSmscharges(), "200");
+        ka.insertText(dcp.getRental(),"700");
+        ka.insertText(dcp.getLocal_minutes(),"3500");
+        ka.insertText(dcp.getInterminutes(), "500");
+        ka.insertText(dcp.getSmspack(), "400");
+        ka.insertText(dcp.getMinutescharges(), "5");
+        ka.insertText(dcp.getIntercharges(), "20");
+        ka.insertText(dcp.getSmscharges(), "4");
 	}
 	
 

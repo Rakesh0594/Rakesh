@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features="src\\test\\resources\\Features1",
                  glue="com.samplecum.stepdefinition",
                  dryRun=false,
-                 plugin="html:target\\samplecucum-html-reports",
+                 plugin={"html:target\\samplecucum-html-reports","json:target\reports.json"},
                  monochrome=true,
                  tags={"@Rakesh,@venu"})
 public class TestRunner {
